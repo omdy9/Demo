@@ -1,0 +1,11 @@
+image:alpine:latest
+pages:
+  script:
+    -mkdir .public
+    cp demo.html .public
+  
+  artifact:
+    path:
+      -public
+  only:
+    -main
