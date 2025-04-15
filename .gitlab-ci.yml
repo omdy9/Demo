@@ -1,8 +1,8 @@
-image:alpine:latest
+image: alpine:latest
 pages:
   script:
     - mkdir .public
-    - cp index.html stylesheet.css .public
+    - cp demo.html .public/
   
   artifacts:
     paths:
