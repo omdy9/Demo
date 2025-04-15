@@ -1,11 +1,11 @@
 image:alpine:latest
 pages:
   script:
-    -mkdir .public
-    cp demo.html .public
+    - mkdir .public
+    - cp index.html stylesheet.css .public
   
-  artifact:
-    path:
-      -public
+  artifacts:
+    paths:
+      - public
   only:
-    -main
+    - master
